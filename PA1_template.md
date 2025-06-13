@@ -1,10 +1,11 @@
 ---
-title: "PA1_template"
+title: "Activity Monitoring Data Analysis"
 author: "Carvel18"
 date: "2025-06-13"
-output: html_document
+output:
+  html_document: default
+  word_document: default
 ---
-
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -116,4 +117,3 @@ xyplot(steps ~ interval | day_type, data = steps_by_daytype, layout = c(1, 2),
        xlab = "5-minute Interval", ylab = "Average Steps",
        main = "Weekday vs Weekend Activity Patterns")
 ```
-
